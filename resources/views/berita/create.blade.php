@@ -30,6 +30,20 @@
                                 @enderror
                             </div>
                             <div class="form-outline mb-4 form-floating">
+                                <label class="form-label">Kategori</label>
+                                <select name="kategori_id" class="form-select @error('kategori_id') is-invalid @enderror" >
+                                        <option value=""></option>
+                                    @foreach ($kategori as $data)
+                                        <option value="{{ $data->id }}">{{ $data->namakategori }}</option>
+                                    @endforeach
+                                </select>
+                                @error('kategori_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="form-outline mb-4 form-floating">
                                 <label class="form-label">Isi</label>
                                 <textarea id="summernote" name="isi"></textarea>
                                 <!-- <input name="isi" id="isi" type="hidden"> -->

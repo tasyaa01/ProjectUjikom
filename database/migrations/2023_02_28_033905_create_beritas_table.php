@@ -17,8 +17,10 @@ class CreateBeritasTable extends Migration
             $table->id();
             $table->string('judul');
             $table->text('subjudul');
+            $table->UnsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->text('isi');
-            $table->string('foto');
+            $table->string('foto'); 
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class BeritaController extends Controller
@@ -19,13 +20,16 @@ class BeritaController extends Controller
     public function index()
     {
         //menampilkan semua data dari model Berita
-        $berita = Berita::all();
-        return view('berita.index', compact('berita'));
+        $berita = Berita::all();     
+        $kategori = Kategori::all();     
+        return view('berita.index', compact('berita','kategori'));
     }
 
     public function create()
     {
-        return view('berita.create');
+        $kategori = Kategori::all();
+        return view('berita.create', compact('kategori'));
+        // return view('berita.create');
     }
 
     public function store(Request $request)
@@ -39,7 +43,8 @@ class BeritaController extends Controller
 
         $berita = new Berita();
         $berita->judul = $request->judul;
-        $berita->subjudul = $request->subjudul;        
+        $berita->subjudul = $request->subjudul; 
+        $berita->kategori_id = $request->kategori_id;
         $berita->isi = $request->isi;
         if ($request->hasFile('foto')) {
             $image = $request->file('foto');
@@ -61,7 +66,8 @@ class BeritaController extends Controller
     public function edit($id)
     {
         $berita = Berita::findOrFail($id);
-        return view('berita.edit', compact('berita'));
+        $kategori = Kategori::all();
+        return view('berita.edit', compact('berita','kategori_id'));
     }
 
     public function update(Request $request, $id)
@@ -77,6 +83,7 @@ class BeritaController extends Controller
         $berita = Berita::findOrFail($id);
         $berita->judul = $request->judul;
         $berita->subjudul = $request->subjudul;        
+        $berita->kategori_id = $request->kategori_id;        
         $berita->isi = $request->isi;
         if ($request->hasFile('foto')) {
             $image = $request->file('foto');

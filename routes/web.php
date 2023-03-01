@@ -1,6 +1,7 @@
 <?php
 
 // panggil semua controller yang digunakan
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\TampilanberitaController;
 use App\Http\Controllers\DetailednewsController;
@@ -57,6 +58,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/kategori', KategoriController::class)->middleware('auth'); 
 
 Route::resource('/berita', BeritaController::class)->middleware('auth'); 
 

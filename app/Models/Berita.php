@@ -4,11 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Kategori;
 
 class Berita extends Model
 {
     use HasFactory;
-    public $fillable = ['judul', 'subjudul','isi','foto'];
+    public $fillable = ['judul', 'subjudul','kategori_id','isi','foto'];
+
+    public function kategori()
+    {
+        return $this->hasOne(Kategori::class,'kategori_id');
+    }
 
     // method menampilkan image(foto)
     public function image()
