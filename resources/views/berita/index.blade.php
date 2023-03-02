@@ -32,7 +32,9 @@
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $data->judul }}</td>
                                             <!-- <td>{{ $data->subjudul }}</td> -->
-                                            <td>{{ $data->kategori_id }}</td>
+                                            @foreach($kategori as $kategoris)
+                                                <td>{{ $kategoris->namakategori }}</td>
+                                            @endforeach
                                             <td>
                                                 <img src="{{$data->image()}}" width="100" height="100">
                                             </td>

@@ -44,7 +44,7 @@ class BeritaController extends Controller
         $berita = new Berita();
         $berita->judul = $request->judul;
         $berita->subjudul = $request->subjudul; 
-        $berita->kategori_id = $request->kategori_id;
+        $berita->namakategori = $request->namakategori;
         $berita->isi = $request->isi;
         if ($request->hasFile('foto')) {
             $image = $request->file('foto');
@@ -67,7 +67,7 @@ class BeritaController extends Controller
     {
         $berita = Berita::findOrFail($id);
         $kategori = Kategori::all();
-        return view('berita.edit', compact('berita','kategori_id'));
+        return view('berita.edit', compact('berita','kategori'));
     }
 
     public function update(Request $request, $id)

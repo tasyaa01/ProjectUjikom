@@ -168,22 +168,22 @@
                             <div class="row">
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/monyet.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/monyet.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/gajah.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/gajah.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/rusa.png" style="height:200px; width:280px">  
+                                        <img class="img-fluid" src="assets_user/images/rusa.png" style="height:200px; width:230px">  
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/burung.png" style="height:200px; width:280px">  
+                                        <img class="img-fluid" src="assets_user/images/burung.png" style="height:200px; width:230px">  
                                     </div>
                                 </div>
 
@@ -194,23 +194,23 @@
                             <div class="row">
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/burung2.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/burung2.png" style="height:200px; width:230px">
 
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/komodo.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/komodo.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/bunglon.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/bunglon.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/buaya.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/buaya.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
 
@@ -221,23 +221,23 @@
                             <div class="row">
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/singa.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/singa.png" style="height:200px; width:230px">
 
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/elang.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/elang.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/badak2.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/badak2.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                                 <div class="col-md-0 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" src="assets_user/images/singa2.png" style="height:200px; width:280px">
+                                        <img class="img-fluid" src="assets_user/images/singa2.png" style="height:200px; width:230px">
                                     </div>
                                 </div>
                             </div>
